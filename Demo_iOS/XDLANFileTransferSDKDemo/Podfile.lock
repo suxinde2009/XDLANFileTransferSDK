@@ -1,0 +1,17 @@
+PODS:
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - XDCommonLib (0.0.1.9)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.5.0)
+  - XDCommonLib (~> 0.0.1.9)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  XDCommonLib: 7b950a26e488877e95b4e5cc5aab2c9a02bb821a
+
+PODFILE CHECKSUM: cd85669c099e8ca65a297a84c36bf9a65910775f
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,1 @@
+../../../XDCommonLib/XDCommonLib/CommonBasicComponentLayer/Categories/Foundation/NSObject/NSObject+AutoCoding.h

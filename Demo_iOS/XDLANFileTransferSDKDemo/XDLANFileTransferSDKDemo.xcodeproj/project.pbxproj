@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FB56E0A1D731F6000342C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E091D731F6000342C14 /* main.m */; };
+		1FB56E0D1D731F6000342C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E0C1D731F6000342C14 /* AppDelegate.m */; };
+		1FB56E101D731F6000342C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E0F1D731F6000342C14 /* ViewController.m */; };
+		1FB56E131D731F6000342C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB56E111D731F6000342C14 /* Main.storyboard */; };
+		1FB56E151D731F6000342C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB56E141D731F6000342C14 /* Assets.xcassets */; };
+		1FB56E181D731F6000342C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB56E161D731F6000342C14 /* LaunchScreen.storyboard */; };
+		1FB56E231D731F6000342C14 /* XDLANFileTransferSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E221D731F6000342C14 /* XDLANFileTransferSDKDemoTests.m */; };
+		1FB56E2E1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E2D1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.m */; };
+		1FB56E3E1D731F8600342C14 /* XDLANFileTransferSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E3D1D731F8600342C14 /* XDLANFileTransferSDK.m */; };
+		1FB56E421D73539800342C14 /* XDLANDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E411D73539800342C14 /* XDLANDeviceInfo.m */; };
+		1FB56E451D7353EB00342C14 /* XDUDPBroadCaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB56E441D7353EB00342C14 /* XDUDPBroadCaster.m */; };
+		1FB869ED1D7359D4003676B9 /* XDUDPBroadListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB869EC1D7359D4003676B9 /* XDUDPBroadListener.m */; };
+		455010DEBC1F53AA35DDE9B8 /* libPods-XDLANFileTransferSDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC41AF8AF1F83FD5EF0AAED /* libPods-XDLANFileTransferSDKDemoTests.a */; };
+		9ADF600BB2E26FDA63BD63ED /* libPods-XDLANFileTransferSDKDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F484874FB98C1C887FDB5C27 /* libPods-XDLANFileTransferSDKDemoUITests.a */; };
+		BEB2B028774CBE058ECA652F /* libPods-XDLANFileTransferSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F630FF318A403F5E09C9ADFD /* libPods-XDLANFileTransferSDKDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FB56E1F1D731F6000342C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB56DFD1D731F6000342C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB56E041D731F6000342C14;
+			remoteInfo = XDLANFileTransferSDKDemo;
+		};
+		1FB56E2A1D731F6000342C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB56DFD1D731F6000342C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB56E041D731F6000342C14;
+			remoteInfo = XDLANFileTransferSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EBE24F5E44FA44C60908871 /* Pods-XDLANFileTransferSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoTests/Pods-XDLANFileTransferSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1FB56E051D731F6000342C14 /* XDLANFileTransferSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDLANFileTransferSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB56E091D731F6000342C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FB56E0B1D731F6000342C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FB56E0C1D731F6000342C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FB56E0E1D731F6000342C14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1FB56E0F1D731F6000342C14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FB56E121D731F6000342C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FB56E141D731F6000342C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FB56E171D731F6000342C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FB56E191D731F6000342C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB56E1E1D731F6000342C14 /* XDLANFileTransferSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDLANFileTransferSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB56E221D731F6000342C14 /* XDLANFileTransferSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDLANFileTransferSDKDemoTests.m; sourceTree = "<group>"; };
+		1FB56E241D731F6000342C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB56E291D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDLANFileTransferSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB56E2D1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDLANFileTransferSDKDemoUITests.m; sourceTree = "<group>"; };
+		1FB56E2F1D731F6000342C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB56E3C1D731F8600342C14 /* XDLANFileTransferSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLANFileTransferSDK.h; sourceTree = "<group>"; };
+		1FB56E3D1D731F8600342C14 /* XDLANFileTransferSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLANFileTransferSDK.m; sourceTree = "<group>"; };
+		1FB56E3F1D7320E600342C14 /* XDLANFileTransferSDKConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDLANFileTransferSDKConsts.h; sourceTree = "<group>"; };
+		1FB56E401D73539800342C14 /* XDLANDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLANDeviceInfo.h; sourceTree = "<group>"; };
+		1FB56E411D73539800342C14 /* XDLANDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLANDeviceInfo.m; sourceTree = "<group>"; };
+		1FB56E431D7353EB00342C14 /* XDUDPBroadCaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDUDPBroadCaster.h; sourceTree = "<group>"; };
+		1FB56E441D7353EB00342C14 /* XDUDPBroadCaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDUDPBroadCaster.m; sourceTree = "<group>"; };
+		1FB869EB1D7359D4003676B9 /* XDUDPBroadListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDUDPBroadListener.h; sourceTree = "<group>"; };
+		1FB869EC1D7359D4003676B9 /* XDUDPBroadListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDUDPBroadListener.m; sourceTree = "<group>"; };
+		4EC41AF8AF1F83FD5EF0AAED /* libPods-XDLANFileTransferSDKDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDLANFileTransferSDKDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33FBC7D8CB3A779C26ECF10 /* Pods-XDLANFileTransferSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemo/Pods-XDLANFileTransferSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B08C738FDB055E4EF84B8EEB /* Pods-XDLANFileTransferSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoUITests/Pods-XDLANFileTransferSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C3598F1FFA552A5CD5822AF3 /* Pods-XDLANFileTransferSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoTests/Pods-XDLANFileTransferSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B4CBE4C8FA961F52392A78 /* Pods-XDLANFileTransferSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemo/Pods-XDLANFileTransferSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1E824893096CA06A2FB528 /* Pods-XDLANFileTransferSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLANFileTransferSDKDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoUITests/Pods-XDLANFileTransferSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F484874FB98C1C887FDB5C27 /* libPods-XDLANFileTransferSDKDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDLANFileTransferSDKDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F630FF318A403F5E09C9ADFD /* libPods-XDLANFileTransferSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDLANFileTransferSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FB56E021D731F6000342C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB2B028774CBE058ECA652F /* libPods-XDLANFileTransferSDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E1B1D731F6000342C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455010DEBC1F53AA35DDE9B8 /* libPods-XDLANFileTransferSDKDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E261D731F6000342C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADF600BB2E26FDA63BD63ED /* libPods-XDLANFileTransferSDKDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FB56DFC1D731F6000342C14 = {
+			isa = PBXGroup;
+			children = (
+				1FB56E071D731F6000342C14 /* XDLANFileTransferSDKDemo */,
+				1FB56E211D731F6000342C14 /* XDLANFileTransferSDKDemoTests */,
+				1FB56E2C1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests */,
+				1FB56E061D731F6000342C14 /* Products */,
+				B22496923BFF0666A19A1A73 /* Pods */,
+				40B38542F8DBF9EA45CD88B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FB56E061D731F6000342C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E051D731F6000342C14 /* XDLANFileTransferSDKDemo.app */,
+				1FB56E1E1D731F6000342C14 /* XDLANFileTransferSDKDemoTests.xctest */,
+				1FB56E291D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FB56E071D731F6000342C14 /* XDLANFileTransferSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E3B1D731F6F00342C14 /* XDLANFileTransferSDK_iOS */,
+				1FB56E0B1D731F6000342C14 /* AppDelegate.h */,
+				1FB56E0C1D731F6000342C14 /* AppDelegate.m */,
+				1FB56E0E1D731F6000342C14 /* ViewController.h */,
+				1FB56E0F1D731F6000342C14 /* ViewController.m */,
+				1FB56E111D731F6000342C14 /* Main.storyboard */,
+				1FB56E141D731F6000342C14 /* Assets.xcassets */,
+				1FB56E161D731F6000342C14 /* LaunchScreen.storyboard */,
+				1FB56E191D731F6000342C14 /* Info.plist */,
+				1FB56E081D731F6000342C14 /* Supporting Files */,
+			);
+			path = XDLANFileTransferSDKDemo;
+			sourceTree = "<group>";
+		};
+		1FB56E081D731F6000342C14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E091D731F6000342C14 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FB56E211D731F6000342C14 /* XDLANFileTransferSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E221D731F6000342C14 /* XDLANFileTransferSDKDemoTests.m */,
+				1FB56E241D731F6000342C14 /* Info.plist */,
+			);
+			path = XDLANFileTransferSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		1FB56E2C1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E2D1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.m */,
+				1FB56E2F1D731F6000342C14 /* Info.plist */,
+			);
+			path = XDLANFileTransferSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		1FB56E3B1D731F6F00342C14 /* XDLANFileTransferSDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1FB56E3C1D731F8600342C14 /* XDLANFileTransferSDK.h */,
+				1FB56E3D1D731F8600342C14 /* XDLANFileTransferSDK.m */,
+				1FB56E3F1D7320E600342C14 /* XDLANFileTransferSDKConsts.h */,
+				1FB56E401D73539800342C14 /* XDLANDeviceInfo.h */,
+				1FB56E411D73539800342C14 /* XDLANDeviceInfo.m */,
+				1FB56E431D7353EB00342C14 /* XDUDPBroadCaster.h */,
+				1FB56E441D7353EB00342C14 /* XDUDPBroadCaster.m */,
+				1FB869EB1D7359D4003676B9 /* XDUDPBroadListener.h */,
+				1FB869EC1D7359D4003676B9 /* XDUDPBroadListener.m */,
+			);
+			name = XDLANFileTransferSDK_iOS;
+			path = ../../../XDLANFileTransferSDK_iOS;
+			sourceTree = "<group>";
+		};
+		40B38542F8DBF9EA45CD88B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F630FF318A403F5E09C9ADFD /* libPods-XDLANFileTransferSDKDemo.a */,
+				4EC41AF8AF1F83FD5EF0AAED /* libPods-XDLANFileTransferSDKDemoTests.a */,
+				F484874FB98C1C887FDB5C27 /* libPods-XDLANFileTransferSDKDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B22496923BFF0666A19A1A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4B4CBE4C8FA961F52392A78 /* Pods-XDLANFileTransferSDKDemo.debug.xcconfig */,
+				A33FBC7D8CB3A779C26ECF10 /* Pods-XDLANFileTransferSDKDemo.release.xcconfig */,
+				C3598F1FFA552A5CD5822AF3 /* Pods-XDLANFileTransferSDKDemoTests.debug.xcconfig */,
+				1EBE24F5E44FA44C60908871 /* Pods-XDLANFileTransferSDKDemoTests.release.xcconfig */,
+				DB1E824893096CA06A2FB528 /* Pods-XDLANFileTransferSDKDemoUITests.debug.xcconfig */,
+				B08C738FDB055E4EF84B8EEB /* Pods-XDLANFileTransferSDKDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FB56E041D731F6000342C14 /* XDLANFileTransferSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB56E321D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemo" */;
+			buildPhases = (
+				21113BE1CC1AB6DBB91E14A5 /* [CP] Check Pods Manifest.lock */,
+				1FB56E011D731F6000342C14 /* Sources */,
+				1FB56E021D731F6000342C14 /* Frameworks */,
+				1FB56E031D731F6000342C14 /* Resources */,
+				4A35912F9CDC025A62B0D519 /* [CP] Embed Pods Frameworks */,
+				0A7FE1384E5E27E0C9BBB604 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XDLANFileTransferSDKDemo;
+			productName = XDLANFileTransferSDKDemo;
+			productReference = 1FB56E051D731F6000342C14 /* XDLANFileTransferSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FB56E1D1D731F6000342C14 /* XDLANFileTransferSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB56E351D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemoTests" */;
+			buildPhases = (
+				72DEEA1E5F37C21A0F501DFF /* [CP] Check Pods Manifest.lock */,
+				1FB56E1A1D731F6000342C14 /* Sources */,
+				1FB56E1B1D731F6000342C14 /* Frameworks */,
+				1FB56E1C1D731F6000342C14 /* Resources */,
+				9ECBD1C44266FAAA44B064B3 /* [CP] Embed Pods Frameworks */,
+				B6E97308BD84042474646572 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB56E201D731F6000342C14 /* PBXTargetDependency */,
+			);
+			name = XDLANFileTransferSDKDemoTests;
+			productName = XDLANFileTransferSDKDemoTests;
+			productReference = 1FB56E1E1D731F6000342C14 /* XDLANFileTransferSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FB56E281D731F6000342C14 /* XDLANFileTransferSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB56E381D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemoUITests" */;
+			buildPhases = (
+				23EA2FB19EBDF509AF9487C2 /* [CP] Check Pods Manifest.lock */,
+				1FB56E251D731F6000342C14 /* Sources */,
+				1FB56E261D731F6000342C14 /* Frameworks */,
+				1FB56E271D731F6000342C14 /* Resources */,
+				9866797D16F45E24DB9EF658 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB56E2B1D731F6000342C14 /* PBXTargetDependency */,
+			);
+			name = XDLANFileTransferSDKDemoUITests;
+			productName = XDLANFileTransferSDKDemoUITests;
+			productReference = 1FB56E291D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FB56DFD1D731F6000342C14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.su;
+				TargetAttributes = {
+					1FB56E041D731F6000342C14 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1FB56E1D1D731F6000342C14 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1FB56E041D731F6000342C14;
+					};
+					1FB56E281D731F6000342C14 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1FB56E041D731F6000342C14;
+					};
+				};
+			};
+			buildConfigurationList = 1FB56E001D731F6000342C14 /* Build configuration list for PBXProject "XDLANFileTransferSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FB56DFC1D731F6000342C14;
+			productRefGroup = 1FB56E061D731F6000342C14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FB56E041D731F6000342C14 /* XDLANFileTransferSDKDemo */,
+				1FB56E1D1D731F6000342C14 /* XDLANFileTransferSDKDemoTests */,
+				1FB56E281D731F6000342C14 /* XDLANFileTransferSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FB56E031D731F6000342C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB56E181D731F6000342C14 /* LaunchScreen.storyboard in Resources */,
+				1FB56E151D731F6000342C14 /* Assets.xcassets in Resources */,
+				1FB56E131D731F6000342C14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E1C1D731F6000342C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E271D731F6000342C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A7FE1384E5E27E0C9BBB604 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDLANFileTransferSDKDemo/Pods-XDLANFileTransferSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21113BE1CC1AB6DBB91E14A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23EA2FB19EBDF509AF9487C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A35912F9CDC025A62B0D519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDLANFileTransferSDKDemo/Pods-XDLANFileTransferSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DEEA1E5F37C21A0F501DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9866797D16F45E24DB9EF658 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoUITests/Pods-XDLANFileTransferSDKDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ECBD1C44266FAAA44B064B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoTests/Pods-XDLANFileTransferSDKDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E97308BD84042474646572 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDLANFileTransferSDKDemoTests/Pods-XDLANFileTransferSDKDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FB56E011D731F6000342C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB56E421D73539800342C14 /* XDLANDeviceInfo.m in Sources */,
+				1FB869ED1D7359D4003676B9 /* XDUDPBroadListener.m in Sources */,
+				1FB56E101D731F6000342C14 /* ViewController.m in Sources */,
+				1FB56E0D1D731F6000342C14 /* AppDelegate.m in Sources */,
+				1FB56E0A1D731F6000342C14 /* main.m in Sources */,
+				1FB56E451D7353EB00342C14 /* XDUDPBroadCaster.m in Sources */,
+				1FB56E3E1D731F8600342C14 /* XDLANFileTransferSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E1A1D731F6000342C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB56E231D731F6000342C14 /* XDLANFileTransferSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB56E251D731F6000342C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB56E2E1D731F6000342C14 /* XDLANFileTransferSDKDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FB56E201D731F6000342C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FB56E041D731F6000342C14 /* XDLANFileTransferSDKDemo */;
+			targetProxy = 1FB56E1F1D731F6000342C14 /* PBXContainerItemProxy */;
+		};
+		1FB56E2B1D731F6000342C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FB56E041D731F6000342C14 /* XDLANFileTransferSDKDemo */;
+			targetProxy = 1FB56E2A1D731F6000342C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FB56E111D731F6000342C14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB56E121D731F6000342C14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FB56E161D731F6000342C14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB56E171D731F6000342C14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FB56E301D731F6000342C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FB56E311D731F6000342C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FB56E331D731F6000342C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B4CBE4C8FA961F52392A78 /* Pods-XDLANFileTransferSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XDLANFileTransferSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FB56E341D731F6000342C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33FBC7D8CB3A779C26ECF10 /* Pods-XDLANFileTransferSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XDLANFileTransferSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FB56E361D731F6000342C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3598F1FFA552A5CD5822AF3 /* Pods-XDLANFileTransferSDKDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XDLANFileTransferSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDLANFileTransferSDKDemo.app/XDLANFileTransferSDKDemo";
+			};
+			name = Debug;
+		};
+		1FB56E371D731F6000342C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EBE24F5E44FA44C60908871 /* Pods-XDLANFileTransferSDKDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XDLANFileTransferSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDLANFileTransferSDKDemo.app/XDLANFileTransferSDKDemo";
+			};
+			name = Release;
+		};
+		1FB56E391D731F6000342C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1E824893096CA06A2FB528 /* Pods-XDLANFileTransferSDKDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = XDLANFileTransferSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XDLANFileTransferSDKDemo;
+			};
+			name = Debug;
+		};
+		1FB56E3A1D731F6000342C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08C738FDB055E4EF84B8EEB /* Pods-XDLANFileTransferSDKDemoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = XDLANFileTransferSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.su.XDLANFileTransferSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XDLANFileTransferSDKDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB56E001D731F6000342C14 /* Build configuration list for PBXProject "XDLANFileTransferSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB56E301D731F6000342C14 /* Debug */,
+				1FB56E311D731F6000342C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB56E321D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB56E331D731F6000342C14 /* Debug */,
+				1FB56E341D731F6000342C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB56E351D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB56E361D731F6000342C14 /* Debug */,
+				1FB56E371D731F6000342C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB56E381D731F6000342C14 /* Build configuration list for PBXNativeTarget "XDLANFileTransferSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB56E391D731F6000342C14 /* Debug */,
+				1FB56E3A1D731F6000342C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FB56DFD1D731F6000342C14 /* Project object */;
+}

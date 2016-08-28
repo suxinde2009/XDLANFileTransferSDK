@@ -1,0 +1,1 @@
+../../../XDCommonLib/XDCommonLib/BLLSDKLayer/WirelessPrinter/BLE/BLEPrinter/UIImage+Bitmap.h

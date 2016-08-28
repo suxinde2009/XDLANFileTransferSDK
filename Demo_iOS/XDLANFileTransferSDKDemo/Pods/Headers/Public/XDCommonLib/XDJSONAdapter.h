@@ -1,0 +1,1 @@
+../../../XDCommonLib/XDCommonLib/CommonBasicComponentLayer/Venders/YRJSONAdapter/XDJSONAdapter.h
