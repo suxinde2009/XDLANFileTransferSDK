@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  MultiCastDemo
+//
+//  Created by suxinde on 16/8/30.
+//  Copyright © 2016年 com.su. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+
