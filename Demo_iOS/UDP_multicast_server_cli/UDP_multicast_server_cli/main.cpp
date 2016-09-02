@@ -1,94 +1,28 @@
 //
-//  Server.m
-//  MultiCastDemo
+//  main.cpp
+//  UDP_multicast_server_cli
 //
 //  Created by suxinde on 16/8/30.
 //  Copyright © 2016年 com.su. All rights reserved.
 //
 
-#import "Server.h"
-
-#include<iostream>
-#include<stdio.h>
-#include<sys/socket.h>
-#include<netdb.h>
-#include<sys/types.h>
-#include<arpa/inet.h>
-#include<netinet/in.h>
-#include<unistd.h>
-#include<stdlib.h>
-#include<string.h>
-
-/*
-#define MCAST_PORT 8888
-#define MCAST_ADDR "224.0.0.88"  // 多播地址
-#define MCAST_DATA "BROADCAST TEST DATA"  // 多播内容
-#define MCAST_INTERVAL 5  //多播时间间隔
-
-using std::cout;
-using std::endl;
-using std::string;
-
-int startServer()
-{
-    int sock;
-    struct sockaddr_in mcast_addr;
-    sock=socket(AF_INET,SOCK_DGRAM,0);
-    if(sock==-1)
-    {
-        cout<<"socket error"<<endl;
-        return -1;
-    }
-    
-    int ttl = 64;
-    int err = setsockopt(sock, IPPROTO_IP, IP_MULTICAST_TTL, (char *)&ttl, sizeof(ttl));  //设置组播TTL
-    if (err < 0) {
-        //                if (errPtr) {
-        //                    *errPtr = [self errnoErrorWithReason:@"Error setting multicast ttl (setsockopt)"];
-        //                }
-        cout<<"set sock ttl error"<<endl;
-        return -4;
-    }
-    
-    
-    memset(&mcast_addr,0,sizeof(mcast_addr));
-    mcast_addr.sin_family=AF_INET;
-    mcast_addr.sin_addr.s_addr=inet_addr(MCAST_ADDR);
-    mcast_addr.sin_port=htons(MCAST_PORT);
-    
-    
-    
-    
-    while(1)
-    {       //向局部多播地址发送多播内容
-        int n = sendto(sock,
-                       MCAST_DATA,
-                       sizeof(MCAST_DATA),
-                       0,
-                       (struct sockaddr*)&mcast_addr,
-                       sizeof(mcast_addr));
-        if(n<0)
-        {
-            cout<<"send error"<<endl;
-            return -2;
-        }
-        else
-        {
-            cout<<"send message is going ...."<<endl;
-        }
-        sleep(MCAST_INTERVAL);
-        
-    }
-    return 0;
-}
-*/
-
+#include <iostream>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <netdb.h>
+#include <errno.h>
 
 #define BUFLEN 255
 
-int startServer(char *groupAddress,
-                char *port)
-{
+using std::cout;
+
+
+int main(int argc, const char * argv[]) {
+    
     struct sockaddr_in peeraddr;
     struct in_addr ia;
     int sockfd;
@@ -106,8 +40,8 @@ int startServer(char *groupAddress,
     
     /* 设置要加入组播的地址 */
     bzero(&mreq, sizeof(struct ip_mreq));
-    if (groupAddress) {
-        if ((group = gethostbyname(groupAddress)) == (struct hostent *) 0) {
+    if (argv[1]) {
+        if ((group = gethostbyname(argv[1])) == (struct hostent *) 0) {
             perror("gethostbyname");
             exit(errno);
         }
@@ -135,12 +69,12 @@ int startServer(char *groupAddress,
     socklen = sizeof(struct sockaddr_in);
     memset(&peeraddr, 0, socklen);
     peeraddr.sin_family = AF_INET;
-    if (port)
-        peeraddr.sin_port = htons(atoi(port));
+    if (argv[2])
+        peeraddr.sin_port = htons(atoi(argv[2]));
     else
         peeraddr.sin_port = htons(7838);
-    if (groupAddress) {
-        if (inet_pton(AF_INET, groupAddress, &peeraddr.sin_addr) <= 0) {
+    if (argv[1]) {
+        if (inet_pton(AF_INET, argv[1], &peeraddr.sin_addr) <= 0) {
             printf("Wrong dest IP address!\n");
             exit(0);
         }
@@ -172,16 +106,6 @@ int startServer(char *groupAddress,
         }
     }
 
+    
+    return 0;
 }
-
-@implementation Server
-
-- (int)startServer
-{
-    return startServer("224.0.0.1", "7123");
-    //return startServer();
-}
-
-@end
-
-
